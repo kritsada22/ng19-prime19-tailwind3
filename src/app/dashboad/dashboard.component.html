@@ -1,0 +1,413 @@
+hello
+<div class="min-h-screen flex relative lg:static bg-surface-50 dark:bg-surface-950">
+  <div id="app-sidebar-9" class="h-screen bg-surface-0 dark:bg-surface-950 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-10 border-r border-surface w-72 lg:w-28 select-none">
+    <div class="flex flex-col h-full">
+      <div class="flex items-center justify-center flex-shrink-0 h-[60px]">
+        <svg width="48" height="40" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.1548 9.65956L23.9913 4.86169L5.54723 14.5106L0.924465 12.0851L23.9913 0L37.801 7.23403L33.1548 9.65956ZM23.9931 19.3085L42.4255 9.65955L47.0717 12.0851L23.9931 24.1595L10.1952 16.9361L14.8297 14.5106L23.9931 19.3085ZM4.6345 25.8937L0 23.4681V37.9149L23.0669 50V45.1489L4.6345 35.4894V25.8937ZM18.4324 28.2658L0 18.6169V13.7658L23.0669 25.8403V40.2977L18.4324 37.8615V28.2658ZM38.7301 23.468V18.6169L24.9205 25.8403V49.9999L29.555 47.5743V28.2659L38.7301 23.468ZM43.3546 35.4892V16.1914L48.0008 13.7659V37.9148L34.1912 45.1488V40.2977L43.3546 35.4892Z"
+            class="fill-primary"
+          />
+        </svg>
+      </div>
+      <div class="mt-4">
+        <ul class="list-none p-0 m-0">
+          <li>
+            <a
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-primary border-l-2 border-primary hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <i class="pi pi-home mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:!text-2xl leading-none"></i>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Home</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-surface-600 dark:text-surface-200 border-l-2 border-transparent hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <i class="pi pi-search mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:!text-2xl leading-none"></i>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Search</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-surface-600 dark:text-surface-200 border-l-2 border-transparent hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <i class="pi pi-users mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:!text-2xl leading-none"></i>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Team</span>
+            </a>
+          </li>
+          <li class="relative">
+            <a
+              [ngClass]="{
+                                    selector: '@next',
+                                    enterFromClass: 'hidden',
+                                    leaveToClass: 'hidden',
+                                    hideOnOutsideClick: true
+                                }"
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-surface-600 dark:text-surface-200 border-l-2 border-transparent hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <p-overlayBadge severity="danger" class="mr-2 lg:mr-0 mb-0 lg:mb-2">
+                <i class="pi pi-chart-line text-base lg:!text-2xl leading-none"></i>
+              </p-overlayBadge>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Reports</span>
+              <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
+            </a>
+            <ul
+              class="list-none pl-4 pr-0 py-0 lg:p-4 m-0 hidden overflow-y-hidden transition-all duration-[400ms] ease-in-out static rounded-r lg:absolute left-full top-0 z-10 bg-surface-0 dark:bg-surface-900 shadow-none lg:shadow w-full lg:w-60"
+            >
+              <li>
+                <a
+                  [ngClass]="{
+                                            selector: '@next',
+                                            toggleClass: 'hidden'
+                                        }"
+                  class="flex items-center cursor-pointer p-4 hover:bg-surface-100 dark:hover:bg-surface-700 hover:text-surface-900 dark:hover:text-surface-0 rounded-md text-surface-600 dark:text-surface-200 hover:text-surface-700 dark:hover:text-surface-100 duration-150 transition-colors"
+                >
+                  <i class="pi pi-chart-line mr-2"></i>
+                  <span class="font-medium">Revenue</span>
+                  <i class="pi pi-chevron-down ml-auto"></i>
+                </a>
+                <ul class="list-none py-0 pl-4 pr-0 m-0 hidden overflow-y-hidden transition-all duration-[400ms] ease-in-out">
+                  <li>
+                    <a
+                      class="flex items-center cursor-pointer p-4 hover:bg-surface-100 dark:hover:bg-surface-700 hover:text-surface-900 dark:hover:text-surface-0 rounded-md text-surface-600 dark:text-surface-200 hover:text-surface-700 dark:hover:text-surface-100 duration-150 transition-colors"
+                    >
+                      <i class="pi pi-table mr-2"></i>
+                      <span class="font-medium">View</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center cursor-pointer p-4 hover:bg-surface-100 dark:hover:bg-surface-700 hover:text-surface-900 dark:hover:text-surface-0 rounded-md text-surface-600 dark:text-surface-200 hover:text-surface-700 dark:hover:text-surface-100 duration-150 transition-colors"
+                    >
+                      <i class="pi pi-search mr-2"></i>
+                      <span class="font-medium">Search</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="flex items-center cursor-pointer p-4 hover:bg-surface-100 dark:hover:bg-surface-700 hover:text-surface-900 dark:hover:text-surface-0 rounded-md text-surface-600 dark:text-surface-200 hover:text-surface-700 dark:hover:text-surface-100 duration-150 transition-colors"
+                >
+                  <i class="pi pi-chart-line mr-2"></i>
+                  <span class="font-medium">Expenses</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-surface-600 dark:text-surface-200 border-l-2 border-transparent hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <i class="pi pi-calendar mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:!text-2xl leading-none"></i>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Events</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center text-surface-600 dark:text-surface-200 border-l-2 border-transparent hover:border-surface-300 dark:hover:border-surface-500 duration-150 transition-colors"
+            >
+              <i class="pi pi-cog mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:!text-2xl leading-none"></i>
+              <span class="font-medium inline text-base lg:text-xs lg:block">Options</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-auto">
+        <hr class="mb-4 mx-4 border-t border-0 border-surface" />
+        <a
+          class="m-4 flex flex-row lg:flex-col items-center cursor-pointer p-4 lg:justify-center hover:bg-surface-200 dark:hover:bg-surface-600 rounded-md text-surface-600 dark:text-surface-200 duration-150 transition-colors"
+        >
+          <img src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/avatars/circle/avatar-f-1.png" class="mr-2 lg:mr-0 w-8 h-8"  alt=""/>
+          <span class="font-medium inline lg:hidden">Amy Elsner</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="min-h-screen flex flex-col relative flex-auto">
+    <div class="flex justify-between items-center px-8 bg-surface-0 dark:bg-surface-950 relative lg:static border-b border-surface h-[60px]">
+      <div class="flex">
+        <a
+          [ngClass]="{
+                            selector: '#app-sidebar-9',
+                            enterFromClass: 'hidden',
+                            enterActiveClass: 'animate-fadeinleft',
+                            leaveToClass: 'hidden',
+                            leaveActiveClass: 'animate-fadeoutleft',
+                            hideOnOutsideClick: true
+                        }"
+          class="cursor-pointer block lg:hidden text-surface-700 dark:text-surface-100 mr-4 mt-1"
+        >
+          <i class="pi pi-bars text-4xl"></i>
+        </a>
+        <p-iconfield icon-position="left">
+          <p-inputicon class="pi pi-search text-surface-700 dark:text-surface-100" />
+          <input pInputText type="text" class="border-0 w-40 sm:w-80" placeholder="Search" />
+        </p-iconfield>
+      </div>
+      <a
+        [ngClass]="{
+                        selector: '@next',
+                        enterFromClass: 'hidden',
+                        enterActiveClass: 'animate-fadein',
+                        leaveToClass: 'hidden',
+                        leaveActiveClass: 'animate-fadeout',
+                        hideOnOutsideClick: true
+                    }"
+        class="cursor-pointer block lg:hidden text-surface-700 dark:text-surface-100"
+      >
+        <i class="pi pi-ellipsis-v text-2xl"></i>
+      </a>
+      <ul
+        class="list-none p-0 m-0 hidden lg:flex lg:items-center select-none lg:flex-row bg-surface-0 dark:bg-surface-950 border lg:border-0 border-surface right-0 top-full z-10 shadow lg:shadow-none absolute lg:static"
+      >
+        <li>
+          <a
+            class="flex p-4 lg:px-4 lg:py-2 items-center text-surface-600 dark:text-surface-200 hover:text-surface-900 dark:hover:text-surface-0 hover:bg-surface-100 dark:hover:bg-surface-700 font-medium rounded-md cursor-pointer duration-150 transition-colors"
+          >
+            <i class="pi pi-inbox text-base lg:!text-2xl leading-none mr-2 lg:mr-0"></i>
+            <span class="block lg:hidden font-medium">Inbox</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="flex p-4 lg:px-4 lg:py-2 items-center text-surface-600 dark:text-surface-200 hover:text-surface-900 dark:hover:text-surface-0 hover:bg-surface-100 dark:hover:bg-surface-700 font-medium rounded-md cursor-pointer duration-150 transition-colors"
+          >
+            <p-overlayBadge severity="danger" class="mr-2 lg:mr-0">
+              <i class="pi pi-bell text-base lg:!text-2xl leading-none"></i>
+            </p-overlayBadge>
+            <span class="block lg:hidden font-medium">Notifications</span>
+          </a>
+        </li>
+        <li class="border-t border-surface lg:border-t-0">
+          <a class="flex p-4 lg:px-4 lg:py-2 items-center hover:bg-surface-100 dark:hover:bg-surface-700 font-medium rounded-md cursor-pointer duration-150 transition-colors">
+            <img src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/avatars/circle/avatar-f-1.png" class="mr-4 lg:mr-0 w-8 h-8"  alt=""/>
+            <div class="block lg:hidden">
+              <div class="text-surface-900 dark:text-surface-0 font-medium">Amy Elsner</div>
+              <span class="text-surface-600 dark:text-surface-200 font-medium text-sm">Marketing Specialist</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-8 flex flex-col flex-auto">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-12">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3">
+              <div class="p-4 text-center bg-blue-500 rounded-xl">
+                                    <span class="inline-flex justify-center items-center bg-blue-600 rounded-full mb-4 w-12 h-12 py-2">
+                                        <i class="pi pi-inbox !text-xl leading-none text-white"></i>
+                                    </span>
+                <div class="text-2xl font-medium text-white mb-2">123K</div>
+                <span class="text-blue-100 font-medium">Messages</span>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-3">
+              <div class="p-4 text-center bg-purple-500 rounded-xl">
+                                    <span class="inline-flex justify-center items-center bg-purple-600 rounded-full mb-4 w-12 h-12 py-2">
+                                        <i class="pi pi-map-marker !text-xl leading-none text-white"></i>
+                                    </span>
+                <div class="text-2xl font-medium text-white mb-2">23K</div>
+                <span class="text-purple-100 font-medium">Check-ins</span>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-3">
+              <div class="p-4 text-center bg-indigo-500 rounded-xl">
+                                    <span class="inline-flex justify-center items-center bg-indigo-600 rounded-full mb-4 w-12 h-12 py-2">
+                                        <i class="pi pi-file !text-xl leading-none text-white"></i>
+                                    </span>
+                <div class="text-2xl font-medium text-white mb-2">23K</div>
+                <span class="text-indigo-100 font-medium">Files</span>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-3">
+              <div class="p-4 text-center bg-orange-500 rounded-xl">
+                                    <span class="inline-flex justify-center items-center bg-orange-600 rounded-full mb-4 w-12 h-12 py-2">
+                                        <i class="pi pi-users !text-xl leading-none text-white"></i>
+                                    </span>
+                <div class="text-2xl font-medium text-white mb-2">40K</div>
+                <span class="text-orange-100 font-medium">Users</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6">
+          <div class="shadow bg-surface-0 dark:bg-surface-900 rounded-md p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-xl font-medium text-surface-900 dark:text-surface-0">Traffic Distribution</span>
+              <div class="ml-20">
+                <p-button icon="pi pi-ellipsis-v"  (click)="menu.toggle($event)" />
+                <p-menu #menu [popup]="true" [model]="items()" />
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-6">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-twitter text-5xl text-blue-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">12.40K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">Twitter</span>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 text-center">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-vimeo text-5xl text-blue-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">10.20K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">Vimeo</span>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 text-center">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-facebook text-5xl text-blue-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">5.60K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">Facebook</span>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 text-center">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-discord text-5xl text-indigo-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">23.53K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">Discord</span>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 text-center">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-github text-5xl text-purple-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">16.70K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">GitHub</span>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 text-center">
+                  <div class="text-center border border-surface rounded-md p-6">
+                    <i class="pi pi-google text-5xl text-pink-500"></i>
+                    <div class="text-surface-900 dark:text-surface-0 text-2xl font-700 my-4 font-bold">16.50K</div>
+                    <span class="font-medium text-surface-600 dark:text-surface-200">Google</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-12 lg:col-span-6">
+          <div class="bg-surface-0 dark:bg-surface-900 shadow rounded-md p-6 h-full">
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-xl font-medium text-surface-900 dark:text-surface-0">Quarter Goals</span>
+              <div class="ml-auto">
+                <p-button icon="pi pi-ellipsis-v" text plain rounded (click)="menu.toggle($event)" />
+                <p-menu #menu [popup]="true" [model]="items()" />
+              </div>
+            </div>
+            <div class="border-surface border rounded-md p-4 mb-6">
+              <span class="text-surface-900 dark:text-surface-0 font-medium text-3xl">85% <span class="text-surface-600 dark:text-surface-200">(2125/2500)</span></span>
+              <ul class="mt-4 list-none p-0 mx-0 flex">
+                <li class="h-4 flex-1 bg-indigo-500 rounded-l"></li>
+                <li class="h-4 flex-1 bg-blue-500"></li>
+                <li class="h-4 flex-1 bg-orange-500"></li>
+                <li class="h-4 flex-1 bg-purple-500"></li>
+                <li class="h-4 flex-1 bg-yellow-500"></li>
+                <li class="h-4 flex-1 bg-cyan-500"></li>
+                <li class="h-4 flex-1 bg-surface-500 dark:bg-surface-300 rounded-r"></li>
+              </ul>
+            </div>
+            <ul class="mt-6 list-none p-0 mx-0">
+              <li class="flex items-center pb-4">
+                <span class="w-4 h-4 rounded-full bg-indigo-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Watch</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">152</span>
+              </li>
+              <li class="flex items-center py-4">
+                <span class="w-4 h-4 rounded-full bg-blue-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Blue Band</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">63</span>
+              </li>
+              <li class="flex items-center py-4">
+                <span class="w-4 h-4 rounded-full bg-orange-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Controller</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">23</span>
+              </li>
+              <li class="flex items-center py-4">
+                <span class="w-4 h-4 rounded-full bg-purple-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Lime Band</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">42</span>
+              </li>
+              <li class="flex items-center py-4">
+                <span class="w-4 h-4 rounded-full bg-yellow-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Phone Case</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">134</span>
+              </li>
+              <li class="flex items-center py-4">
+                <span class="w-4 h-4 rounded-full bg-cyan-500 mr-4 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">T-Shirt</span>
+                <span class="text-surface-600 dark:text-surface-200 text-xl font-medium ml-auto">89</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-4">
+              <div class="shadow bg-surface-0 dark:bg-surface-900 rounded-md p-6 h-full">
+                <div class="flex items-start mb-8">
+                  <img
+                    src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/avatars/circle-big/avatar-m-1.png"
+                    width="56" height="56" alt=""/>
+                  <div class="ml-4">
+                    <span class="block text-surface-900 dark:text-surface-0 mb-1 text-xl font-medium">Cameron Williamson</span>
+                    <p class="text-surface-600 dark:text-surface-200 mt-0 mb-0">Marketing Coordinator</p>
+                  </div>
+                </div>
+                <ul class="list-none p-0 m-0">
+                  <li class="mb-8">
+                    <div class="flex justify-between items-center">
+                                                <span
+                                                  class="text-surface-900 dark:text-surface-0 inline-flex justify-between items-center">
+                                                    <i class="pi pi-twitter mr-2"></i>
+                                                    <span class="font-medium text-surface-900 dark:text-surface-0">Twitter</span>
+                                                </span>
+                      <span class="text-cyan-500 font-medium">34.00%</span>
+                    </div>
+                    <div class="bg-surface-200 dark:bg-surface-700 w-full mt-2 h-[7px] rounded">
+                      <div class="bg-cyan-500 h-full w-[34%] rounded"></div>
+                    </div>
+                  </li>
+                  <li class="mb-8">
+                    <div class="flex justify-between items-center">
+                                                <span
+                                                  class="text-surface-900 dark:text-surface-0 inline-flex justify-between items-center">
+                                                    <i class="pi pi-facebook mr-2"></i>
+                                                    <span class="font-medium text-surface-900 dark:text-surface-0">Facebook</span>
+                                                </span>
+                      <span class="text-indigo-500 font-medium">45.86%</span>
+                    </div>
+                    <div class="bg-surface-200 dark:bg-surface-700 w-full mt-2 h-[7px] rounded">
+                      <div class="bg-indigo-500 h-full rounded w-[45%]"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex justify-between items-center">
+                                                <span
+                                                  class="text-surface-900 dark:text-surface-0 inline-flex justify-between items-center">
+                                                    <i class="pi pi-google mr-2"></i>
+                                                    <span class="font-medium text-surface-900 dark:text-surface-0">Google</span>
+                                                </span>
+                      <span class="text-orange-500 font-medium">79.00%</span>
+                    </div>
+                    <div class="bg-surface-200 dark:bg-surface-700 w-full mt-2 h-[7px] rounded">
+                      <div class="bg-orange-500 h-full w-[79%] rounded"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
